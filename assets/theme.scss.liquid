@@ -11765,3 +11765,48 @@ iframe.zoid-component-frame {
 .type-advanced .promo-grid__content:not(.promo-grid__content--boxed):not(.promo-grid__content--sale):after, .type-simple .promo-grid__content:not(.promo-grid__content--boxed):not(.promo-grid__content--sale):after {
   background: transparent;
 }
+
+// Last client image css
+
+
+.clients-outer-container {
+  text-align: center;
+}
+
+.clients-img-container {
+  margin: auto;
+  padding: 20px;
+}
+
+.clients-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#clients-section img {
+  max-width: 120px;
+  -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.7;
+    filter: alpha(opacity=50);
+}
+#clients-section img:hover {
+  -webkit-filter: grayscale(0%) !important;
+  filter: grayscale(0%) !important;
+  opacity: 1;
+  filter: alpha(opacity=0);
+}
+
+@media (max-width: 1200px) {
+  .clients-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 720px) {
+  .clients-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
